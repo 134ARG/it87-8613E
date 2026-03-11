@@ -3,8 +3,8 @@ TARGET		:= $(shell uname -r)
 # Or specific version
 #TARGET		:= 2.6.33.5
 KERNEL_MODULES	:= /lib/modules/$(TARGET)
-# KERNEL_BUILD	:= $(KERNEL_MODULES)/build
-KERNEL_BUILD	:= /usr/src/kernels/$(TARGET)
+KERNEL_BUILD	:= $(KERNEL_MODULES)/build
+# KERNEL_BUILD	:= /usr/src/kernels/$(TARGET)
 
 #SYSTEM_MAP	:= $(KERNEL_BUILD)/System.map
 SYSTEM_MAP	:= /boot/System.map-$(TARGET)
